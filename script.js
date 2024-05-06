@@ -1,5 +1,5 @@
-function colorAleatorio(){
-    let titulo = document.getElementById("h5");
-    titulo.style.backgroundColor = "red";
+function colorAleatorio() {
+    var colores = ['green', 'blue', 'red'];
+    var colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+    document.getElementById('color').style.color = colorAleatorio;
 }
-document.getElementById("color").addEventListener("click", colorAleatorio);
